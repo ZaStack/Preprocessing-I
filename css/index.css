@@ -1,1 +1,85 @@
-/* Compile your LESS file! */
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 95%;
+  font-size: 62.5;
+}
+#page-wrapper header {
+  height: 5vh;
+}
+#page-wrapper header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+}
+#page-wrapper header nav a {
+  margin: 0 1%;
+  font-size: 1.4rem;
+}
+#page-wrapper .main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: gray;
+  border: 1px solid red;
+}
+#page-wrapper .main img {
+  width: 45%;
+  margin: 5%;
+}
+#page-wrapper .main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10%;
+  max-width: 49%;
+}
+#page-wrapper .main .about p {
+  font-size: 2rem;
+  margin: 10% 0 0 0;
+}
+#page-wrapper .main .about h1 {
+  font-size: 4rem;
+  margin: 0% 0 10% 0;
+}
+#page-wrapper div.bottom-wrap {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: green;
+}
+#page-wrapper div.bottom-wrap .portfolio {
+  background-color: pink;
+  width: 50%;
+  font-size: 3rem;
+}
+#page-wrapper div.bottom-wrap .contact {
+  background-color: yellow;
+  width: 50%;
+}
+#page-wrapper footer nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+}
+#page-wrapper footer nav a {
+  margin: 0 1%;
+  font-size: 1.4rem;
+}
