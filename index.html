@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zach Stack Resume</title>
-
     <link rel="stylesheet" href="css/index.css" />
 
     <!--[if lt IE 9]>
@@ -14,17 +13,24 @@
   </head>
   <body>
     <!-- Page Wrapper -->
+    <div class="sidebar">
+      <img src="img\pic02.jpg" alt="" />
+      <h2>Zach Stack</h2>
+      <p>
+        Software Engineer <br />
+        stackz.personal@gmail.com
+      </p>
+      <nav>
+        <a href="#home">Contact</a>
+        <a href="#about">About</a>
+        <a href="">GitHub</a>
+        <a href="">Portfolio</a>
+      </nav>
+    </div>
     <div id="page-wrapper">
-      <header>
-        <nav>
-          <a href="page-wrapper">Top</a>
-          <a href="">About</a>
-          <a href="">Skills</a>
-          <a href="">Contact</a>
-        </nav>
-      </header>
+      <header></header>
       <section class="main">
-        <img src="img\pic01.jpg" alt="" />
+        <!-- <img src="img\pic01.jpg" alt="" /> -->
         <div class="about">
           <h1>Hi, I'm Zach Stack</h1>
           <p>
@@ -35,23 +41,56 @@
           </p>
         </div>
       </section>
-      <div class="bottom-wrap">
-        <section class="contact"></section>
-        <section class="portfolio">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo libero
-            veniam sed quas? Laudantium, veniam. Quasi, nihil ratione recusandae quo
-            doloribus, iure qui dolorum quam expedita ducimus voluptas commodi
-            pariatur.</p>
-          </section>
+      <div class="bottom">
+        <div class="bottom-left">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>General Computer Use</li>
+            <li>First Aid/CPR</li>
+          </ul>
         </div>
-      <footer>
-        <nav>
-          <a href="page-wrapper">Top</a>
-          <a href="">About</a>
-          <a href="">Portfolio</a>
-          <a href="">Contact</a>
-        </nav>
-      </footer>
+        <div class="bottom-right">
+          <h2>Work Experience</h2>
+          <table class="blueTable">
+              <thead>
+              <tr>
+              <th>Years</th>
+              <th>Company</th>
+              <th>Title</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>cell1_1</td>
+              <td>cell2_1</td>
+              <td>cell3_1</td>
+              </tr>
+              <tr>
+              <td>cell1_2</td>
+              <td>cell2_2</td>
+              <td>cell3_2</td>
+              </tr>
+              <tr>
+              <td>cell1_3</td>
+              <td>cell2_3</td>
+              <td>cell3_3</td>
+              </tr>
+              <tr>
+              <td>cell1_4</td>
+              <td>cell2_4</td>
+              <td>cell3_4</td>
+              </tr>
+              <tr>
+              <td>cell1_5</td>
+              <td>cell2_5</td>
+              <td>cell3_5</td>
+              </tr>
+              </tbody>
+              </table>
+        </div>
+      </div>
     </div>
   </body>
 </html>
