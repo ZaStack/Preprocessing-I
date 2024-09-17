@@ -1,59 +1,232 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+// Variables
+.font-fancy() {
+  font-family: "Lobster", cursive;
+}
+.center() {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@rosy: #c2afaf;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
+// Reset
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+// Basic
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.5;
+  font-size: 62.5%;
+  background-color: #ffeee6;
 }
 
-html, body {
-    height: 100%;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  height: 100vh;
+  background-color: #5d8aa8;
+  border: 1px solid green;
+  position: fixed;
+  color: white;
+  overflow-wrap: break-word;
+
+  img {
+    width: 80%;
+    border-radius: 50%;
+    margin: 8%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2;
+	max-width: 100%;
+	
+	span{
+		text-decoration:underline;
+	}
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 4.5rem;
+    margin-bottom: 5%;
+	color: @rosy;
+	padding-left: 5%;
+    .font-fancy();
+
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 3rem;
+    line-height: 2;
+    margin: 20% 0 0 5%;
+
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: @rosy;
+    }
+  }
 }
 
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  //   font-size: 62.5;
+
+  .main {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+	font-size: 3rem;
+	
+	@media (max-width: 500px){
+		width: 100%;
+		margin-left: 12%;
+		font-size: 2rem;
+		padding: 0;
+	}
+
+
+    .about {
+      .center();
+      flex-direction: column;
+      padding: 0 10%;
+	  max-width: 49%;
+	  
+	  @media (max-width: 500px){
+		  width: 100%;
+		  padding: 0;
+	}
+
+
+      p {
+        margin: 10% 0 0 0;
+        width: 100%;
+      }
+
+      h1 {
+        .font-fancy();
+        font-size: 5rem;
+		margin: 0% 0 5% 0;
+		
+		@media (max-width: 500px){
+			font-size: 3.4rem;
+		}
+	
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    font-size: 3rem;
+	line-height: 1.5;
+	
+	@media (max-width: 500px){
+		flex-direction: column;
+		align-items: center;
+		font-size: 2rem;
+	}
+
+
+    h2 {
+      font-size: 3.5rem;
+      .font-fancy();
+    }
+    .bottom-left {
+      margin: 0 5% 0 20%;
+	  width: 30%;
+
+	  @media (max-width: 500px){
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  width:100%;
+		  margin: 5% 0;
+	}
+
+    }
+    .bottom-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 5%;
+	  width: 30%;
+	  
+	  @media (max-width: 500px){
+		  width:100%;
+		  margin:5% 0 0 0;
+		  padding-left: 12%;
+	}
+
+
+      table.blueTable {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+      }
+      table.blueTable td,
+      table.blueTable th {
+        border: 1px solid #aaaaaa;
+        padding: 6px 2px;
+      }
+      table.blueTable tbody td {
+        font-size: 13px;
+      }
+      table.blueTable tr:nth-child(even) {
+        background: #d0e4f5;
+      }
+      table.blueTable thead {
+        border-bottom: 2px solid #444444;
+      }
+      table.blueTable thead th {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      table.blueTable tfoot td {
+        font-size: 14px;
+      }
+      table.blueTable tfoot .links {
+        text-align: right;
+      }
+      table.blueTable tfoot .links a {
+        display: inline-block;
+        background: #1c6ea4;
+        color: #ffffff;
+        padding: 2px 8px;
+        border-radius: 5px;
+      }
+    }
+
+  }
+}

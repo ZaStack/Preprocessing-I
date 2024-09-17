@@ -1,1 +1,215 @@
-/* Compile your LESS file! */
+.font-fancy {
+  font-family: "Lobster", cursive;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.5;
+  font-size: 62.5%;
+  background-color: #ffeee6;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  height: 100vh;
+  background-color: #5d8aa8;
+  border: 1px solid green;
+  position: fixed;
+  color: white;
+  overflow-wrap: break-word;
+}
+.sidebar img {
+  width: 80%;
+  border-radius: 50%;
+  margin: 8%;
+}
+.sidebar p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2;
+  max-width: 100%;
+}
+.sidebar p span {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .sidebar p {
+    display: none;
+  }
+}
+.sidebar h2 {
+  width: 100%;
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+  color: #c2afaf;
+  padding-left: 5%;
+  font-family: "Lobster", cursive;
+}
+@media (max-width: 500px) {
+  .sidebar h2 {
+    font-size: 1.3rem;
+  }
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 3rem;
+  line-height: 2;
+  margin: 20% 0 0 5%;
+}
+@media (max-width: 500px) {
+  .sidebar nav {
+    font-size: 1.5rem;
+  }
+}
+.sidebar nav a {
+  color: #c2afaf;
+}
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+#page-wrapper .main {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 5% 0;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  #page-wrapper .main {
+    width: 100%;
+    margin-left: 12%;
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+#page-wrapper .main .about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+  max-width: 49%;
+}
+@media (max-width: 500px) {
+  #page-wrapper .main .about {
+    width: 100%;
+    padding: 0;
+  }
+}
+#page-wrapper .main .about p {
+  margin: 10% 0 0 0;
+  width: 100%;
+}
+#page-wrapper .main .about h1 {
+  font-family: "Lobster", cursive;
+  font-size: 5rem;
+  margin: 0% 0 5% 0;
+}
+@media (max-width: 500px) {
+  #page-wrapper .main .about h1 {
+    font-size: 3.4rem;
+  }
+}
+#page-wrapper .bottom {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  #page-wrapper .bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
+#page-wrapper .bottom h2 {
+  font-size: 3.5rem;
+  font-family: "Lobster", cursive;
+}
+#page-wrapper .bottom .bottom-left {
+  margin: 0 5% 0 20%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  #page-wrapper .bottom .bottom-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+#page-wrapper .bottom .bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  #page-wrapper .bottom .bottom-right {
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding-left: 12%;
+  }
+}
+#page-wrapper .bottom .bottom-right table.blueTable {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+#page-wrapper .bottom .bottom-right table.blueTable td,
+#page-wrapper .bottom .bottom-right table.blueTable th {
+  border: 1px solid #aaaaaa;
+  padding: 6px 2px;
+}
+#page-wrapper .bottom .bottom-right table.blueTable tbody td {
+  font-size: 13px;
+}
+#page-wrapper .bottom .bottom-right table.blueTable tr:nth-child(even) {
+  background: #d0e4f5;
+}
+#page-wrapper .bottom .bottom-right table.blueTable thead {
+  border-bottom: 2px solid #444444;
+}
+#page-wrapper .bottom .bottom-right table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+}
+#page-wrapper .bottom .bottom-right table.blueTable tfoot td {
+  font-size: 14px;
+}
+#page-wrapper .bottom .bottom-right table.blueTable tfoot .links {
+  text-align: right;
+}
+#page-wrapper .bottom .bottom-right table.blueTable tfoot .links a {
+  display: inline-block;
+  background: #1c6ea4;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
